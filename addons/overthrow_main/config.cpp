@@ -133,9 +133,6 @@ class CfgMissions {
         class OverthrowMpLivonia {
             directory = "overthrow_main\campaign\missions\OverthrowMpLivonia.Enoch";
         };
-        class OverthrowMpChernarus2020 {
-            directory = "overthrow_main\campaign\missions\OverthrowMpChernarus.cup_chernarus_A3";
-        };
     };
     class Cutscenes {
         class OT_Tanoa_intro1 {
