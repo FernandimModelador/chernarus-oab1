@@ -1,0 +1,9 @@
+params ["_unit", ["_dis", 800]];
+{
+    if (side _x isEqualTo blufor && (units _x isNotEqualTo [])) then {
+        private _lead = leader _x;
+        if ((_lead distance2D _unit) < _dis) then {
+            _lead reveal [_unit, 1.5];
+        };
+    };
+} forEach (groups blufor);

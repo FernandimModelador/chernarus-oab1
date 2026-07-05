@@ -1,0 +1,12 @@
+{
+  "inputDirs": [
+    "P:/Overthrow/addons"
+  ],
+  "includePaths": [
+    "P:/"
+  ],
+  "excludeList": [
+  ],
+  "outputDir": "P:/",
+  "workerThreads": 8
+}

@@ -1,0 +1,14 @@
+[
+	["GroundWeaponHolder",[2.5293,5.6272,0.0595312],244,1,0,[],"","",true,false], 
+	["GroundWeaponHolder",[-3.18213,-5.62134,0.0595307],232.702,1,0,[],"","",true,false], 
+	["Land_BagBunker_Small_F",[3.82275,5.73828,0],182.801,1,0,[],"","",true,false], 
+	["Land_BagBunker_Small_F",[-4.12256,-5.78711,0],1.19486,1,0,[],"","",true,false], 
+	["CUP_B_DSHKM_ACR",[4.13721,5.66357,-0.0654693],358.66,1,0,[],"","",true,false], 
+	["CUP_B_DSHKM_ACR",[-4.57568,-5.65308,-0.0654697],177.941,1,0,[],"","",true,false], 
+	["Land_Mil_ConcreteWall_F",[1.8252,8.05811,1.04904e-05],180.79,1,0,[],"","",true,false], 
+	["Land_Mil_ConcreteWall_F",[-2.18066,-8.0127,1.04904e-05],0,1,0,[],"","",true,false], 
+	["Land_Mil_ConcreteWall_F",[5.7749,7.99048,1.04904e-05],180.79,1,0,[],"","",true,false], 
+	["Land_Mil_ConcreteWall_F",[-6.13086,-7.99951,1.04904e-05],0,1,0,[],"","",true,false], 
+	["Land_Razorwire_F",[5.51416,9.26001,-2.38419e-06],180.79,1,0,[],"","",true,false], 
+	["Land_Razorwire_F",[-5.85303,-9.26563,-2.38419e-06],0,1,0,[],"","",true,false]
+]

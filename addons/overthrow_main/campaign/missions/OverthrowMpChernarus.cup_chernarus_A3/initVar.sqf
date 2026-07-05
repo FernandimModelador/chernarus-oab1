@@ -1,0 +1,230 @@
+OT_nation = "Chernarus";
+OT_saveName = "Overthrow.Chernarus.save.001";
+
+OT_tutorial_backstoryText = "Chernarus";
+OT_startDate = [2030,8,15,8,00];
+
+OT_startCameraPos = [13344.76,2782.62,1];
+OT_startCameraTarget = [13323.858,2773.873,7];
+
+//Used to control updates and persistent save compatability. When these numbers go up, that section will be reinitialized on load if required. (ie leave them alone)
+OT_economyVersion = 1;
+OT_NATOversion = 1;
+OT_CRIMversion = 1;
+
+OT_faction_NATO = "CUP_B_CZ";
+OT_fallback_faction_NATO = "CUP_B_CDF"; // If there were no vehicles in the first faction, take them from this faction
+OT_spawnFaction = "CUP_I_NAPA"; //This faction will have a rep in spawn town
+
+OT_flag_NATO = "FlagCarrierCzechRepublic_EP1"; // Flag objects in bases
+OT_flag_CRIM = "Flag_Red_F";
+OT_flag_IND = "FlagCarrierCDF";
+OT_flagImage = "\A3\UI_F_Enoch\Data\CfgMarkers\Livonia_CA.paa"; // Gun dealer icon on map
+OT_flagMarker = "Faction_CUP_CDF"; // Friendly base marker on map
+
+OT_populationMultiplier = 0.7; //Used to tweak populations per map
+
+//Building templates
+//To generate these templates:
+//1. Open Arma editor, choose VR map
+//2. Add the building you want to make a template for, set its rotation to 0 and name it "building"
+//3. Add furniture objects
+//4. Add a player (any unit), Play the Scenario
+//5. Run this in console: [getPosATL building, 50, false] call BIS_fnc_ObjectsGrabber
+//6. Copy the results, paste them here and remove any extraneous items (ie the building, Logic, babe_helper, Signs)
+//7. If the building floor was much higher than the ground, adjust heights manually
+
+OT_shopBuildings = [
+	["Land_VillageStore_01_F",[]],
+	["Land_Workshop_03_F",[]],
+	["Land_FuelStation_03_shop_F",[]]
+];
+OT_carShopBuildings = [
+	["Land_FuelStation_Build_F",[]],
+	["Land_FuelStation_02_workshop_F",[]]
+];
+OT_spawnHouseBuildings = [
+	["Land_House_1W01_F",[
+		["Land_MetalCase_01_small_F",[1.72656,0.281738,0.07100708],222.829,1,0,[],"","",true,false],
+		["Land_CampingChair_V2_F",[-0.578613,4.1958,0.07100136],197.16,1,0,[],"","",true,false],
+		["OfficeTable_01_new_F",[-0.299316,5.08594,0.07100708],358.592,1,0,[],"","",true,false],
+		["MapBoard_altis_F",[3.82178,3.03174,0.07323391],86.7119,1,0,[],"","",true,false],
+		["B_CargoNet_01_ammo_F",[3.66895,1.04785,0.070999928],0.0065373,1,0,[],"","",true,false],
+		["Land_Workbench_01_F",[2.56641,5.02344,0.070999928],359.402,1,0,[],"","",true,false]
+	]],
+	["Land_House_1W10_F",[
+		["Land_CampingChair_V2_F",[-0.0717773,-2.97461,0.6327754],23.9868,1,0,[],"","",true,false],
+		["OfficeTable_01_new_F",[-0.45166,-3.6626,0.6347524],180.058,1,0,[],"","",true,false],
+		["Land_MetalCase_01_small_F",[-0.836914,-0.214355,0.6367527],92.354,1,0,[],"","",true,false],
+		["Land_Workbench_01_F",[-3.62061,-3.59717,0.651239],179.456,1,0,[],"","",true,false],
+		["B_CargoNet_01_ammo_F",[-4.26172,-1.10889,0.6545793],179.502,1,0,[],"","",true,false],
+		["MapBoard_altis_F",[1.979,-3.14404,0.6671887],124.872,1,0,[],"","",true,false]
+	]],
+	["Land_House_1W02_F",[
+		["Land_MetalCase_01_small_F",[0.868164,0.938965,0.04100374],174.724,1,0,[],"","",true,false],
+		["Land_CampingChair_V2_F",[4.17432,-1.0459,0.0410128],240.978,1,0,[],"","",true,false],
+		["OfficeTable_01_new_F",[4.93945,-1.02637,0.04100183],90.6483,1,0,[],"","",true,false],
+		["MapBoard_altis_F",[-0.0957031,3.0415,0.0427804],355.249,1,0,[],"","",true,false],
+		["B_CargoNet_01_ammo_F",[4.13232,2.63623,0.040999928],179.48,1,0,[],"","",true,false],
+		["Land_Workbench_01_F",[-3.15674,0.967285,0.0410004],269.897,1,0,[],"","",true,false]
+	]]
+];
+
+//Interactable items that spawn in your house
+OT_item_Storage = "B_CargoNet_01_ammo_F"; //Your spawn ammobox
+OT_item_Desk = "OfficeTable_01_new_F"; //Your spawn desk
+OT_item_Radio = "Land_PortableLongRangeRadio_F";
+OT_item_Map = "Land_MapBoard_Enoch_F";
+OT_item_Tent = "Land_TentDome_F";
+OT_item_Safe = "Land_MetalCase_01_small_F";
+OT_item_Workbench = "Land_Workbench_01_F";
+
+//Animals to spawn (@todo: spawn animals)
+OT_allLowAnimals = ["Rabbit_F","Turtle_F"];
+OT_allHighAnimals = ["Goat_random_F"];
+OT_allFarmAnimals = ["Hen_random_F","Cock_random_F","Sheep_random_F"];
+OT_allVillageAnimals = ["Hen_random_F","Cock_random_F"];
+OT_allTownAnimals = ["Alsatian_Random_F","Fin_random_F"];
+
+OT_fuelPumps = ["Land_FuelStation_03_pump_F","Land_FuelStation_Feed_F"];
+
+OT_churches = ["Land_Church_03_F","Land_Church_01_F","Land_Church_02_F","Land_Temple_Native_01_F"];
+
+OT_language_local = "LanguagePOL_F";
+OT_identity_local = "Head_Enoch";
+
+OT_language_western = "LanguageENG_F";
+OT_identity_western = "Head_Euro";
+
+OT_language_eastern = "LanguageCHI_F";
+OT_identity_eastern = "Head_Asian";
+
+OT_face_localBoss = "TanoanBossHead";
+
+OT_civType_gunDealer = "C_man_p_fugitive_F";
+OT_civType_local = "C_man_1";
+OT_civType_carDealer = "C_man_w_worker_F";
+OT_civType_shopkeeper = "C_man_w_worker_F";
+OT_civType_worker = "C_man_w_worker_F";
+OT_civType_priest = "C_man_w_worker_F";
+OT_vehTypes_civ = []; //populated automatically, but you can add more here and they will appear in streets
+OT_vehType_distro = "C_Van_01_box_F";
+OT_vehType_ferry = "C_Boat_Transport_02_F";
+OT_vehType_service = "C_Offroad_01_repair_F";
+OT_vehTypes_civignore = ["C_Hatchback_01_F","C_Hatchback_01_sport_F",OT_vehType_service]; //Civs cannot drive these vehicles for whatever reason
+
+OT_illegalHeadgear = ["H_MilCap_gen_F","H_Beret_gen_F","H_HelmetB_TI_tna_F"];
+OT_illegalVests = ["V_TacVest_gen_F"];
+
+OT_clothes_locals = ["U_I_C_Soldier_Bandit_2_F","U_I_C_Soldier_Bandit_3_F","U_C_Poor_1","U_C_Poor_2","U_C_Poor_shorts_1","U_C_Poloshirt_blue","U_C_Poloshirt_burgundy","U_C_Poloshirt_redwhite","U_C_Poloshirt_stripped"];
+OT_clothes_expats = ["U_I_C_Soldier_Bandit_5_F","U_C_Poloshirt_blue","U_C_Poloshirt_burgundy","U_C_Poloshirt_redwhite","U_C_Poloshirt_salmon","U_C_Poloshirt_stripped","U_C_Man_casual_6_F","U_C_Man_casual_4_F","U_C_Man_casual_5_F"];
+OT_clothes_tourists = [];
+OT_clothes_priest = "U_C_Man_casual_2_F";
+OT_clothes_port = "U_Marshal";
+OT_clothes_shops = ["U_C_Man_casual_2_F","U_C_Man_casual_3_F","U_C_Man_casual_1_F"];
+OT_clothes_carDealers = ["U_Marshal"];
+OT_clothes_harbor = ["U_C_man_sport_1_F","U_C_man_sport_2_F","U_C_man_sport_3_F"];
+OT_clothes_guerilla = ["U_I_C_Soldier_Para_1_F","U_I_C_Soldier_Para_2_F","U_I_C_Soldier_Para_3_F","U_I_C_Soldier_Para_4_F"];
+OT_clothes_police = ["U_I_G_resistanceLeader_F","U_BG_Guerilla2_1","U_BG_Guerilla2_3"];
+OT_vest_police = "V_TacVest_gen_F";
+OT_hat_police = "H_Cap_police";
+OT_clothes_mob = "U_I_C_Soldier_Camo_F";
+
+//NATO stuff
+OT_NATO_HMG = "CUP_B_DSHKM_ACR";
+OT_NATO_Vehicles_AirGarrison = [
+	["CUP_B_Mi171Sh_Unarmed_ACR",2],
+	["CUP_B_Dingo_CZ_Wdl",3],
+	["CUP_B_Dingo_GL_CZ_Wdl",1],
+	["CUP_B_Mi35_Dynamic_CZ_Dark",2],
+	["CUP_B_Mi17_VIV_CDF",2]
+];
+
+OT_NATO_Vehicles_StaticAAGarrison = [
+	"CUP_B_Igla_AA_pod_CDF"
+]; //Added to every airfield
+
+OT_NATO_Vehicles_JetGarrison = [
+	["CUP_B_Su25_Dyn_CDF",2],
+	["CUP_B_SU34_CDF",2]
+];
+
+if(OT_hasJetsDLC) then {
+	OT_NATO_Vehicles_StaticAAGarrison pushback "B_Radar_System_01_F";
+	OT_NATO_Vehicles_StaticAAGarrison pushback "B_SAM_System_03_F";
+};
+
+OT_NATO_StaticGarrison_LevelOne = ["CUP_B_DSHKM_ACR", "CUP_B_LR_MG_CZ_W"];
+OT_NATO_StaticGarrison_LevelTwo = ["CUP_B_DSHKM_ACR","CUP_B_DSHKM_ACR","CUP_B_Dingo_GL_CZ_Wdl", "CUP_B_BRDM2_CZ"];
+OT_NATO_StaticGarrison_LevelThree = ["CUP_B_Igla_AA_pod_CDF","CUP_B_DSHKM_ACR","CUP_B_DSHKM_ACR","CUP_B_Dingo_GL_CZ_Wdl","CUP_B_BRDM2_CZ","CUP_B_LR_Special_CZ_W"];
+
+OT_NATO_CommTowers = ["Land_TTowerBig_1_F","Land_TTowerBig_2_F"];
+
+OT_NATO_Unit_Sniper = "CUP_B_CZ_Sniper_WDL";
+OT_NATO_Unit_Spotter = "CUP_B_CZ_Spotter_WDL";
+OT_NATO_Unit_AA_spec = "CUP_B_CDF_Soldier_AA_MNT";
+OT_NATO_Unit_AA_ass = "CUP_B_CDF_Soldier_AA_MNT";
+OT_NATO_Unit_HVT = "CUP_B_CZ_Officer_WDL";
+OT_NATO_Unit_TeamLeader = "CUP_B_CZ_SpecOps_TL_WDL";
+OT_NATO_Unit_SquadLeader = "CUP_B_CZ_Soldier_SL_WDL";
+
+OT_NATO_Unit_PoliceCommander = "B_Gen_Commander_F";
+OT_NATO_Unit_PoliceCommander_Heavy = "B_Gen_Commander_Heavy_F";
+OT_NATO_Unit_Police = "B_Gen_Soldier_F";
+OT_NATO_Unit_Police_Heavy = "B_Gen_Soldier_Heavy_F";
+OT_NATO_Unit_PoliceMedic_Heavy = "B_Gen_Medic_Heavy_F";
+OT_NATO_Vehicle_PoliceHeli = "CUP_B_Mi171Sh_Unarmed_ACR";
+OT_NATO_Vehicle_Quad = "B_Quadbike_01_F";
+OT_NATO_Vehicle_Police = "B_GEN_Offroad_01_gen_F";
+OT_NATO_Vehicle_Transport = ["CUP_B_T810_Armed_CZ_WDL"];
+OT_NATO_Vehicle_Transport_Light = ["CUP_B_T810_Armed_CZ_WDL"];
+OT_NATO_Vehicles_PoliceSupport = ["CUP_B_LR_MG_CZ_W","CUP_B_BRDM2_CZ","CUP_B_Dingo_CZ_Wdl","CUP_B_Mi171Sh_ACR"];
+OT_NATO_Vehicles_ReconDrone = "B_UAV_01_F";
+OT_NATO_Vehicles_CASDrone = "B_UAV_02_CAS_F";
+OT_NATO_Vehicles_AirSupport = ["CUP_B_Dingo_GL_CZ_Wdl", "CUP_B_Mi35_Dynamic_CZ_Ram"];
+OT_NATO_Vehicles_AirSupport_Small = ["CUP_B_Mi171Sh_ACR", "CUP_B_Mi35_Dynamic_CZ_Ram", "CUP_B_Dingo_CZ_Wdl"];
+OT_NATO_Vehicles_GroundSupport = ["CUP_B_LR_MG_CZ_W","CUP_B_Dingo_GL_CZ_Wdl","CUP_B_BRDM2_CZ","CUP_B_Dingo_GL_CZ_Wdl","CUP_B_Dingo_CZ_Wdl","CUP_B_BMP2_CZ","CUP_B_UAZ_MG_ACR","CUP_B_LR_Special_CZ_W","CUP_B_Dingo_CZ_Wdl"];
+OT_NATO_Vehicles_TankSupport = ["CUP_B_T72_CZ","CUP_B_BMP2_CZ","CUP_B_BRDM2_CZ","CUP_B_UAZ_METIS_ACR"];
+OT_NATO_Vehicles_Convoy = ["CUP_B_Dingo_CZ_Wdl","CUP_B_UAZ_MG_ACR","CUP_B_BRDM2_CZ","CUP_B_UAZ_MG_ACR","CUP_B_Dingo_GL_CZ_Wdl"];
+OT_NATO_Vehicles_AirWingedSupport = ["CUP_B_Su25_Dyn_CDF","CUP_B_SU34_CDF"];
+OT_NATO_Vehicle_AirTransport_Small = "CUP_B_Mi17_medevac_CDF";
+OT_NATO_Vehicle_AirTransport = ["CUP_B_Mi171Sh_Unarmed_ACR","CUP_B_Mi35_Dynamic_CZ_Dark","CUP_B_Mi171Sh_Unarmed_ACR"];
+OT_NATO_Vehicle_AirTransport_Large = "CUP_B_MI6T_CDF";
+OT_NATO_Vehicle_Boat_Small = "CUP_B_BMP2_CZ";
+OT_NATO_Vehicles_APC = ["CUP_B_BRDM2_CZ"];
+
+OT_NATO_Sandbag_Curved = "Land_BagFence_01_round_green_F";
+OT_NATO_Barrier_Small = "Land_HBarrier_01_line_5_green_F";
+OT_NATO_Barrier_Large = "Land_HBarrier_01_wall_6_green_F";
+
+OT_NATO_Mortar = "CUP_B_2b14_82mm_ACR";
+
+OT_NATO_Vehicle_HVT = "CUP_B_UAZ_Unarmed_ACR";
+
+OT_NATO_Vehicle_CTRGTransport = "CUP_B_Mi171Sh_Unarmed_ACR";
+
+OT_NATO_weapons_Police = [];
+OT_NATO_weapons_Pistols = ["CUP_hgun_Duty","CUP_hgun_Phantom","CUP_hgun_MP7"];
+
+//Criminal stuff
+OT_CRIM_Unit = "C_man_p_fugitive_F";
+OT_CRIM_Clothes = ["U_I_C_Soldier_Bandit_3_F","U_BG_Guerilla3_1","U_C_HunterBody_grn","U_I_G_Story_Protagonist_F"];
+OT_CRIM_Goggles = ["G_Balaclava_blk","G_Balaclava_combat","G_Balaclava_lowprofile","G_Balaclava_oli","G_Bandanna_blk","G_Bandanna_khk","G_Bandanna_oli","G_Bandanna_shades","G_Bandanna_sport","G_Bandanna_tan"];
+OT_CRIM_Weapons = ["CUP_arifle_AK74_Early","CUP_arifle_AKM_Early","CUP_arifle_AKS74_Early","CUP_arifle_AKS74U"];
+OT_CRIM_Pistols = ["CUP_hgun_Makarov","CUP_hgun_Mac10","CUP_hgun_CZ75","CUP_hgun_TT"];
+OT_CRIM_Launchers = ["CUP_launch_RPG26","CUP_launch_RPG7V","CUP_launch_HCPF3","CUP_launch_RPG18"];
+
+OT_piers = []; //spawns dudes that sell boats n stuff
+OT_offices = ["Land_MultistoryBuilding_01_F","Land_MultistoryBuilding_04_F"];
+OT_portBuildings = ["Land_Warehouse_01_F","Land_Warehouse_02_F","Land_ContainerLine_01_F","Land_ContainerLine_02_F","Land_ContainerLine_03_F"];
+OT_airportTerminals = ["Land_Hangar_F"];
+OT_portBuilding = ["Land_Warehouse_02_F","Land_WarehouseShelter_01_F"];
+OT_policeStation = "Land_Cargo_House_V3_F";
+OT_warehouse = "Land_Warehouse_03_F";
+OT_warehouses = [OT_warehouse];
+OT_barracks = "Land_Barracks_01_grey_F";
+OT_workshopBuilding = "Land_Cargo_House_V4_F";
+OT_refugeeCamp = "Land_Medevac_house_V1_F";
+OT_trainingCamp = "Land_IRMaskingCover_02_F";
+OT_hardwareStore = "Land_Workshop_05_F";
+OT_radarBuilding = "Land_Radar_Small_F";

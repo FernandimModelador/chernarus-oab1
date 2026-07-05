@@ -1,0 +1,24 @@
+name = "Overthrow Community Edition"
+prefix = "OT"
+author = "The Overthrow community"
+modname = "Overthrow-Community-Edition"
+
+[version]
+path = "addons/overthrow_main/script_version.hpp"
+
+[files]
+include = [
+    "BUILDING.md",
+    "LICENSE.md",
+    "mod.cpp",
+    "README.md",
+    "logo_overthrow.paa"
+]
+folder_optionals = false
+reuse_private_key = false
+key_name = "overthrow-community-{{version}}"
+authority = "overthrow-community-{{version}}"
+sig_version = 3
+
+[hemtt.release]
+folder = "Overthrow-Community-Edition"
