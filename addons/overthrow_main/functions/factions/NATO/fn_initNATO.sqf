@@ -188,7 +188,7 @@ if ((server getVariable "StartupType") == "NEW" || (server getVariable ["NATOver
 
             if (_name isEqualTo OT_NATO_HQ) then {
                 _garrison = 48;
-                server setVariable [format ["vehgarrison%1", _name], ["B_T_APC_Tracked_01_AA_F", "B_T_APC_Tracked_01_AA_F", "B_GMG_01_high_F", "B_GMG_01_high_F", "B_GMG_01_high_F", "B_HMG_01_high_F", "B_HMG_01_high_F", "B_HMG_01_high_F"], true];
+                server setVariable [format ["vehgarrison%1", _name], ["CFR_B_BMP2_CDF", "CFR_B_BMP2_CDF", "CFR_B_BTR80A_CDF", "CFR_B_ZSU23_CDF", "CFR_B_HMMWV_DSHKM_CDF", "CFR_B_UAZ_AGS30_CDF", "CFR_B_RM70_CDF", "CFWR_B_T72B1_CDF", "CFWR_B_T72B1_CDF", "CFR_B_DSHKM_CDF", "CFR_B_DSHKM_CDF", "CFR_B_DSHKM_CDF"], true];
                 private _garr = [];
                 {
                     _x params ["_class", "_num"];

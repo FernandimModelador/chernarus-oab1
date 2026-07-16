@@ -133,20 +133,26 @@ OT_clothes_mob = "U_I_C_Soldier_Camo_F";
 //NATO stuff
 OT_NATO_HMG = "CUP_B_DSHKM_ACR";
 OT_NATO_Vehicles_AirGarrison = [
-	["CUP_B_Mi171Sh_Unarmed_ACR",2],
-	["CUP_B_Dingo_CZ_Wdl",3],
+	["CUP_B_Mi171Sh_Unarmed_ACR",1],
+	["CUP_B_Dingo_CZ_Wdl",1],
 	["CUP_B_Dingo_GL_CZ_Wdl",1],
-	["CUP_B_Mi35_Dynamic_CZ_Dark",2],
+	["CUP_B_Mi35_Dynamic_CZ_Dark",1],
+	["CFR_B_412_Military_DynamicLoadout_CDF",1],
+	["CFR_B_412_Military_Transport_CDF",1],
+	["CFR_B_412_Military_Armed_CDF",1],
 	["CUP_B_Mi17_VIV_CDF",2]
 ];
 
 OT_NATO_Vehicles_StaticAAGarrison = [
-	"CUP_B_Igla_AA_pod_CDF"
+	"CUP_B_Igla_AA_pod_CDF",
+	"CFR_B_UAZ_AA_CDF",
+	"CFR_B_ZSU23_CDF"
 ]; //Added to every airfield
 
 OT_NATO_Vehicles_JetGarrison = [
-	["CUP_B_Su25_Dyn_CDF",2],
-	["CUP_B_SU34_CDF",2]
+	["CUP_B_Su25_Dyn_CDF",1],
+	["CFR_B_JAS39_CDF",1],
+	["CFR_B_ALCA_CDF",1]
 ];
 
 if(OT_hasJetsDLC) then {
@@ -154,9 +160,9 @@ if(OT_hasJetsDLC) then {
 	OT_NATO_Vehicles_StaticAAGarrison pushback "B_SAM_System_03_F";
 };
 
-OT_NATO_StaticGarrison_LevelOne = ["CUP_B_DSHKM_ACR", "CUP_B_LR_MG_CZ_W"];
-OT_NATO_StaticGarrison_LevelTwo = ["CUP_B_DSHKM_ACR","CUP_B_DSHKM_ACR","CUP_B_Dingo_GL_CZ_Wdl", "CUP_B_BRDM2_CZ"];
-OT_NATO_StaticGarrison_LevelThree = ["CUP_B_Igla_AA_pod_CDF","CUP_B_DSHKM_ACR","CUP_B_DSHKM_ACR","CUP_B_Dingo_GL_CZ_Wdl","CUP_B_BRDM2_CZ","CUP_B_LR_Special_CZ_W"];
+OT_NATO_StaticGarrison_LevelOne = ["CUP_B_DSHKM_ACR", "CFR_B_BRDM2_CDF", "CFR_B_UAZ_METIS_CDF", "CUP_B_LR_MG_CZ_W"];
+OT_NATO_StaticGarrison_LevelTwo = ["CUP_B_DSHKM_ACR","CUP_B_DSHKM_ACR", "CFR_B_HMMWV_DSHKM_CDF", "CFR_B_UAZ_METIS_CDF", "CUP_B_Dingo_GL_CZ_Wdl", "CUP_B_BRDM2_CZ"];
+OT_NATO_StaticGarrison_LevelThree = ["CUP_B_Igla_AA_pod_CDF","CUP_B_DSHKM_ACR","CFWR_B_T72B1_CDF","CUP_B_Dingo_GL_CZ_Wdl", "CFR_B_UAZ_METIS_CDF", "CFR_B_BMP2_CDF", "CFR_B_RM70_CDF", "CFR_B_BTR80A_CDF","CUP_B_LR_Special_CZ_W"];
 
 OT_NATO_CommTowers = ["Land_TTowerBig_1_F","Land_TTowerBig_2_F"];
 

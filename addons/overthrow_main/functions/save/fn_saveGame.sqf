@@ -259,12 +259,12 @@ if !(_quiet) then {
 private _getGroupSoldiers = {
     (units _this select {
         private _veh = vehicle _x;
-        alive _x && { _veh isEqualTo _x || { (someAmmo _veh && toLower typeOf _veh in ["i_hmg_01_high_f", "i_gmg_01_high_f"]) } };
+        alive _x && { _veh isEqualTo _x || { (someAmmo _veh && toLower typeOf _veh in ["CUP_I_DSHKM_NAPA", "cwr3_i_ags30"]) } };
     }) apply {
         if (isNull objectParent _x) then {
             [typeOf _x, getUnitLoadout _x];
         } else {
-            if (typeOf objectParent _x == "I_HMG_01_high_F") then { ["HMG", []] } else { ["GMG", []] };
+            if (typeOf objectParent _x == "CUP_I_DSHKM_NAPA") then { ["HMG", []] } else { ["GMG", []] };
         };
     };
 };

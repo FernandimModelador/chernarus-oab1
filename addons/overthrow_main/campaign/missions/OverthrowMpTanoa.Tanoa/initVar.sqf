@@ -85,7 +85,7 @@ OT_hat_police = "H_Cap_police";
 OT_clothes_mob = "U_I_C_Soldier_Camo_F";
 
 //NATO stuff
-OT_NATO_HMG = "B_HMG_01_high_F";
+OT_NATO_HMG = "CFR_B_DSHKM_CDF";
 OT_NATO_Vehicles_AirGarrison = [
     ["B_T_VTOL_01_vehicle_F", 1],
     ["B_T_VTOL_01_infantry_F", 1],
@@ -112,9 +112,9 @@ if (OT_hasJetsDLC) then {
     OT_NATO_Vehicles_StaticAAGarrison pushBack "B_SAM_System_03_F";
 };
 
-OT_NATO_StaticGarrison_LevelOne = ["B_HMG_01_high_F"];
-OT_NATO_StaticGarrison_LevelTwo = ["B_HMG_01_high_F", "B_HMG_01_high_F", "B_GMG_01_high_F", "B_T_MRAP_01_hmg_F"];
-OT_NATO_StaticGarrison_LevelThree = ["B_T_Static_AT_F", "B_T_Static_AA_F", "B_HMG_01_high_F", "B_HMG_01_high_F", "B_GMG_01_high_F", "B_T_MRAP_01_hmg_F", "B_T_MRAP_01_gmg_F"];
+OT_NATO_StaticGarrison_LevelOne = ["CFR_B_DSHKM_CDF"];
+OT_NATO_StaticGarrison_LevelTwo = ["CFR_B_DSHKM_CDF", "CFR_B_DSHKM_CDF", "B_GMG_01_high_F", "B_T_MRAP_01_hmg_F"];
+OT_NATO_StaticGarrison_LevelThree = ["B_T_Static_AT_F", "B_T_Static_AA_F", "CFR_B_DSHKM_CDF", "CFR_B_DSHKM_CDF", "B_GMG_01_high_F", "B_T_MRAP_01_hmg_F", "B_T_MRAP_01_gmg_F"];
 
 OT_NATO_CommTowers = ["Land_TTowerBig_1_F", "Land_TTowerBig_2_F"];
 

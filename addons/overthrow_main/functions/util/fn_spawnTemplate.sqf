@@ -2,27 +2,10 @@ private _building = _this;
 private _type = typeOf (_building);
 if (isNil { templates getVariable _type }) then {
     private _tpl = getText (configFile >> "CfgVehicles" >> _type >> "ot_template");
-    if (isNil "_tpl" || { _tpl isEqualTo "" } || { _tpl isEqualTo "''" }) exitWith {
-        [
-            "OT",
-            "",
-            "TEMPLATE ERROR",
-            format ["%1 has no furniture template defined", _type],
-            __FILE__,
-            __LINE__
-        ] call CBA_fnc_error;
-    };
+    if (isNil "_tpl" || { _tpl isEqualTo "" } || { _tpl isEqualTo "''" }) exitWith {};
+    
     private _template = call compile _tpl;
-    if (isNil "_template") exitWith {
-        [
-            "OT",
-            "",
-            "TEMPLATE ERROR",
-            format ["%1 furniture template is defined incorrectly", _type],
-            __FILE__,
-            __LINE__
-        ] call CBA_fnc_error;
-    };
+    if (isNil "_template") exitWith {};
     if !(_template isEqualType []) exitWith {};
     {
         _x set [8, true];

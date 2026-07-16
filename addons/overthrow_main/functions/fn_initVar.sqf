@@ -190,9 +190,9 @@ OT_item_UAVterminal = "I_UavTerminal";
 OT_item_DefaultBlueprints = [];
 
 OT_itemCategoryDefinitions = [
-    ["General", ["ACE_fieldDressing", "Banana", "ACE_Can_Franta", "ACE_Can_RedGull", "ACE_Can_Spirit", "ACE_Canteen", "ACE_WaterBottle", "ACE_MRE_BeefStew", "ACE_MRE_ChickenTikkaMasala", "ACE_MRE_ChickenHerbDumplings", "ACE_MRE_CreamChickenSoup", "ACE_MRE_CreamTomatoSoup", "ACE_MRE_LambCurry", "ACE_MRE_MeatballsPasta", "ACE_MRE_SteakVegetables", "Map", "ToolKit", "Compass", "ACE_EarPlugs", "Watch", "Radio", "Compass", "ACE_Spraypaint", "Altimiter", "MapTools", "Binocular"]],
-    ["Pharmacy", ["Dressing", "Bandage", "morphine", "adenosine", "atropine", "ACE_EarPlugs", "epinephrine", "bodyBag", "quikclot", "salineIV", "bloodIV", "plasmaIV", "personalAidKit", "surgicalKit", "tourniquet", "splint"]],
-    ["Electronics", ["Rangefinder", "Cellphone", "Radio", "Watch", "GPS", "monitor", "DAGR", "_dagr", "Battery", "ATragMX", "ACE_Flashlight", "I_UavTerminal", "ACE_Kestrel4500"]],
+    ["General", ["ACE_fieldDressing", "Banana", "ACE_WaterBottle", "Map", "ToolKit", "Compass", "Watch", "Radio", "Compass", "ACE_Spraypaint", "Altimiter", "MapTools", "Binocular"]],
+    ["Pharmacy", ["Dressing", "Bandage", "morphine", "adenosine", "atropine", "epinephrine", "bodyBag", "quikclot", "salineIV", "bloodIV", "plasmaIV", "personalAidKit", "surgicalKit", "tourniquet", "splint"]],
+    ["Electronics", ["Rangefinder", "Cellphone", "Radio", "ACRE_PRC343", "ACRE_BF888S", "ACRE_PRC148", "ACRE_PRC117F","Watch", "GPS", "monitor", "DAGR", "Item_Bulat", "Item_Chuyka", "_dagr", "Battery", "ATragMX", "ACE_Flashlight", "I_UavTerminal", "ACE_Kestrel4500"]],
     ["Hardware", ["Tool", "CableTie", "ACE_Spraypaint", "wirecutter", "ACE_rope3", "ACE_rope6", "ACE_rope12", "ACE_rope15", "ACE_rope18", "ACE_rope27", "ACE_rope36"]],
     ["Surplus", ["Rangefinder", "Binocular", "Compass", "RangeCard", "RangeTable", "DefusalKit", "SpottingScope", "ACE_Vector", "ACE_Yardage", "ACE_Kestrel4500", "ACE_NVG_Gen4", "ACE_NVG_Wide"]]
 ];
@@ -990,8 +990,8 @@ if (isServer) then {
     OT_allBoats pushBack (_x select 0);
 } forEach (OT_boats);
 
-OT_staticMachineGuns = ["I_HMG_01_F", "I_HMG_01_high_F", "I_HMG_01_A_F", "O_HMG_01_F", "O_HMG_01_high_F", "O_HMG_01_A_F", "B_HMG_01_F", "B_HMG_01_high_F", "B_HMG_01_A_F"];
-OT_staticWeapons = ["I_Mortar_01_F", "I_static_AA_F", "I_static_AT_F", "I_GMG_01_F", "I_GMG_01_high_F", "I_GMG_01_A_F", "I_HMG_01_F", "I_HMG_01_high_F", "I_HMG_01_A_F", "O_static_AA_F", "O_static_AT_F", "O_Mortar_01_F", "O_GMG_01_F", "O_GMG_01_high_F", "O_GMG_01_A_F", "O_HMG_01_F", "O_HMG_01_high_F", "O_HMG_01_A_F", "B_static_AA_F", "B_static_AT_F", "B_Mortar_01_F", "B_GMG_01_F", "B_GMG_01_high_F", "B_GMG_01_A_F", "B_HMG_01_F", "B_HMG_01_high_F", "B_HMG_01_A_F"];
+OT_staticMachineGuns = ["CFR_B_DSHKM_MiniTriPod_CDF", "CFR_B_DSHKM_CDF", "CUP_O_DSHkM_MiniTriPod_ChDKZ", "CUP_O_DSHKM_ChDKZ", "CFR_B_DSHKM_MiniTriPod_CDF", "CFR_B_DSHKM_CDF"];
+OT_staticWeapons = ["I_NAPA_Podnos_2B14_Mortar_01", "I_NAPA_ZU_23_2_01", "I_NAPA_SPG_9_01","cwr3_i_ags30", "CFR_B_DSHKM_MiniTriPod_CDF", "CFR_B_DSHKM_CDF", "CFR_O_SPG9_ChDKZ", "CFR_O_2B14_82mm_ChDKZ", "CFR_O_AGS_ChDKZ", "CUP_O_DSHkM_MiniTriPod_ChDKZ", "CUP_O_DSHKM_ChDKZ", "CFR_O_DSHKM_ChDKZ", "CFR_B_Igla_AA_Pod_CDF", "CFR_B_SPG9_CDF", "CFR_B_2B14_82mm_CDF", "CFR_B_AGS_CDF", "CFR_B_D30_CDF", "CFR_B_DSHKM_MiniTriPod_CDF", "CFR_B_DSHKM_CDF"];
 
 OT_miscables = [
     "ACE_Wheel",
@@ -1100,10 +1100,10 @@ OT_allSquads = OT_Squadables apply {
 };
 
 OT_workshop = [
-    ["Static MG", "C_Offroad_01_F", 600, "I_HMG_01_high_weapon_F", "I_HMG_01_high_F", [[0.25, -2, 1]], 0],
-    ["Static GL", "C_Offroad_01_F", 1100, "I_GMG_01_high_weapon_F", "I_GMG_01_high_F", [[0.25, -2, 1]], 0],
-    ["Static AT", "C_Offroad_01_F", 2600, "I_AT_01_weapon_F", "I_static_AT_F", [[0, -1.5, 0.25], 180]],
-    ["Static AA", "C_Offroad_01_F", 2600, "I_AA_01_weapon_F", "I_static_AA_F", [[0, -1.5, 0.25], 180]]
+    ["Static MG", "C_Offroad_01_F", 600, "I_HMG_01_high_weapon_F", "CFR_B_DSHKM_CDF", [[0.25, -2, 1]], 0],
+    ["Static GL", "C_Offroad_01_F", 1100, "I_GMG_01_high_weapon_F", "cwr3_i_ags30", [[0.25, -2, 1]], 0],
+    ["Static AT", "C_Offroad_01_F", 2600, "I_AT_01_weapon_F", "I_NAPA_SPG_9_01", [[0, -1.5, 0.25], 180]],
+    ["Static AA", "C_Offroad_01_F", 2600, "I_AA_01_weapon_F", "I_NAPA_ZU_23_2_01", [[0, -1.5, 0.25], 180]]
 ];
 
 OT_repairableRuins = [
