@@ -229,6 +229,7 @@ OT_priceData = [
     ['hgun_Pistol_Signal_F', [20, 0, 1, 0]],
     ['hgun_P07_khk_F', [100, 0, 1, 0]],
     ['hgun_Pistol_01_F', [100, 0, 1, 0]],
+    ['CUP_hgun_Makarov', [10, 0, 1, 0]],
     ['launch_B_Titan_F', [15000, 0, 2, 0]],
     ['launch_I_Titan_F', [15000, 0, 2, 0]],
     ['launch_O_Titan_F', [15000, 0, 2, 0]],

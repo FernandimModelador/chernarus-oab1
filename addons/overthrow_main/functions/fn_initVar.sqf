@@ -178,8 +178,8 @@ OT_item_CargoContainer = "B_Slingload_01_Cargo_F";
 
 //Shop items
 OT_item_ShopRegister = "Land_CashDesk_F"; //Cash registers
-OT_item_BasicGun = "hgun_P07_F"; //Dealers always sell this cheap
-OT_item_BasicAmmo = "16Rnd_9x21_Mag";
+OT_item_BasicGun = "CUP_hgun_Makarov"; //Dealers always sell this cheap
+OT_item_BasicAmmo = "CUP_8Rnd_9x18_Makarov_M";
 
 OT_allDrugs = ["OT_Ganja", "OT_Blow"];
 OT_illegalItems = OT_allDrugs;

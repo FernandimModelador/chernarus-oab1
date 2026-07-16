@@ -745,5 +745,6 @@ class CfgVehicles {
         class EventHandlers {
             init = "(_this select 0) setFlagTexture '\overthrow_main\flags\flag_malden_flagpole.paa'";
         };
+    
     };
 };

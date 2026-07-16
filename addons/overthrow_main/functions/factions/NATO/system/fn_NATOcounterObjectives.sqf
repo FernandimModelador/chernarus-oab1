@@ -92,7 +92,10 @@ private _lastCounter = server getVariable ["NATOlastcounter", ""];
                 _group setVariable ["lambs_danger_disableGroupAI", true];
                 private _p = _pos findEmptyPosition [5, 100, OT_NATO_Vehicles_ReconDrone];
                 if (_p isEqualTo []) then { _p = _pos findEmptyPosition [2, 100, OT_NATO_Vehicles_ReconDrone] };
-                _drone = createVehicle [OT_NATO_Vehicles_ReconDrone, _p, [], 0, ""];
+                if (_p isNotEqualTo []) then {
+                                    _p = [_p select 0, _p select 1, 100];
+                                };
+                _drone = createVehicle [OT_NATO_Vehicles_ReconDrone, _p, [], 0, "FLY"];
                 _drone enableDynamicSimulation false;
 
                 createVehicleCrew _drone;

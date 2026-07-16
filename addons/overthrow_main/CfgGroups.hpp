@@ -2,8 +2,6 @@ class CfgGroups {
     class West {
         class BLU_W_F {
             class Infantry {
-                // Recon team for woodland NATO, based on existing recon team for Pacific NATO.
-                // The recon units do not exist in vanilla game so they are defined in CfgVehicles.
                 class B_W_ReconTeam {
                     name = "$STR_A3_CfgGroups_West_BLU_F_Infantry_BUS_ReconTeam0";
                     side = 1;
@@ -49,7 +47,6 @@ class CfgGroups {
             };
             class Support {
                 name = "$STR_A3_CfgGroups_West_BLU_F_Support0";
-                // Engineer team for woodland NATO, based on existing engineer team for Pacific NATO.
                 class B_W_Support_ENG {
                     name = "$STR_A3_CfgGroups_West_BLU_F_Support_BUS_Support_ENG0";
                     side = 1;
@@ -82,5 +79,6 @@ class CfgGroups {
                 };
             };
         };
+
     };
 };
