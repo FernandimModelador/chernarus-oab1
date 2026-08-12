@@ -63,7 +63,7 @@ if (_create isEqualType 1) then {
                     "Land_Cargo_Patrol_V4_F"
                 ]) exitWith {
                     private _ang = (getDir _building) - 190;
-                    private _p = [_building buildingPos 1, 2.3, _ang] call BIS_fnc_relPos; // Not equivalent to getPos alt syntax!
+                    private _p = [_building buildingPos 1, -1.0, _ang] call BIS_fnc_relPos; // Not equivalent to getPos alt syntax!
 
                     private _guns = { alive _x } count (nearestObjects [_p, ["CUP_I_DSHKM_NAPA", "cwr3_i_ags30"], 5]);
                     if (_guns == 0) then {
