@@ -273,11 +273,11 @@ if (_newplayer) then {
     _light setLightColor [.5, .5, .4];
 
     //Free quad
-    _pos = _housepos findEmptyPosition [5, 100, "C_Quadbike_01_F"];
-    if (_pos isEqualTo []) then { _pos = _housepos findEmptyPosition [0, 100, "C_Quadbike_01_F"] };
+    _pos = _housepos findEmptyPosition [5, 100, "CUP_C_TT650_CIV"];
+    if (_pos isEqualTo []) then { _pos = _housepos findEmptyPosition [0, 100, "CUP_C_TT650_CIV"] };
 
     if (_pos isNotEqualTo []) then {
-        private _veh = "C_Quadbike_01_F" createVehicle _pos;
+        private _veh = "CUP_C_TT650_CIV" createVehicle _pos;
         [_veh, getPlayerUID player] call OT_fnc_setOwner;
         clearWeaponCargoGlobal _veh;
         clearMagazineCargoGlobal _veh;

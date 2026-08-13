@@ -463,6 +463,7 @@ OT_priceData = [
     ['ACE_Chemlight_IR', [8, 0, 0.1, 0]],
     ['ACE_FlareTripMine_Mag', [12, 0, 0.1, 0]],
     //Vehicles
+    ['CUP_C_TT650_CIV', [350, 0, 10, 2]],
     ['C_Offroad_01_F', [580, 0, 15, 2]],
     ['C_Offroad_01_repair_F', [960, 0, 15, 2]],
     ['C_Quadbike_01_F', [140, 0, 15, 2]],
