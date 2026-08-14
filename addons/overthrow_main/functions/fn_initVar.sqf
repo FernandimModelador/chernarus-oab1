@@ -192,7 +192,7 @@ OT_item_DefaultBlueprints = [];
 OT_itemCategoryDefinitions = [
     ["General", ["ACE_fieldDressing", "Banana", "ACE_WaterBottle", "Map", "ToolKit", "Compass", "Watch", "Radio", "Compass", "ACE_Spraypaint", "Altimiter", "MapTools", "Binocular"]],
     ["Pharmacy", ["Dressing", "Bandage", "morphine", "adenosine", "atropine", "epinephrine", "bodyBag", "quikclot", "salineIV", "bloodIV", "plasmaIV", "personalAidKit", "surgicalKit", "tourniquet", "splint"]],
-    ["Electronics", ["Rangefinder", "Cellphone", "Radio", "ACRE_PRC343", "ACRE_BF888S", "ACRE_PRC148", "ACRE_PRC117F","Watch", "GPS", "monitor", "DAGR", "Item_Bulat", "Item_Chuyka", "_dagr", "Battery", "ATragMX", "ACE_Flashlight", "I_UavTerminal", "ACE_Kestrel4500"]],
+    ["Electronics", ["Rangefinder", "Cellphone", "Radio", "ACRE_PRC343", "ACRE_BF888S", "ACRE_PRC148", "ACRE_PRC117F","Watch", "GPS", "monitor", "DAGR", "NER_item_bulatv3", "_dagr", "Battery", "ATragMX", "ACE_Flashlight", "I_UavTerminal", "ACE_Kestrel4500"]],
     ["Hardware", ["Tool", "CableTie", "ACE_Spraypaint", "wirecutter", "ACE_rope3", "ACE_rope6", "ACE_rope12", "ACE_rope15", "ACE_rope18", "ACE_rope27", "ACE_rope36"]],
     ["Surplus", ["Rangefinder", "Binocular", "Compass", "RangeCard", "RangeTable", "DefusalKit", "SpottingScope", "ACE_Vector", "ACE_Yardage", "ACE_Kestrel4500", "ACE_NVG_Gen4", "ACE_NVG_Wide"]]
 ];
