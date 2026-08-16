@@ -37,10 +37,14 @@ OT_populationMultiplier = 0.7; //Used to tweak populations per map
 OT_shopBuildings = [
 	["Land_VillageStore_01_F",[]],
 	["Land_Workshop_03_F",[]],
-	["Land_FuelStation_03_shop_F",[]]
+	["Land_Kiosk_papers_F",[]],
+	["Land_Workshop_02_F",[]],
+	["Land_ldn_Workshop01_01",[]]
 ];
 OT_carShopBuildings = [
 	["Land_FuelStation_Build_F",[]],
+	["Land_FuelStation_03_shop_F",[]],
+	["Land_ldn_Garage01",[]],
 	["Land_FuelStation_02_workshop_F",[]]
 ];
 OT_spawnHouseBuildings = [
